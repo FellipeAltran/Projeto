@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios HTML</title>
+    <style>
+        #conteudo {
+            padding: 30px 0px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Exercício HTML</h1>
     </header>
     <nav> 
-        <a href="exercicios/teste.html">00 - Teste</a> |
-        <a href="exercicios/temp.html">TEMP</a>
+        <a href="exercicios/teste.html" >00 - Teste</a> |&nbsp
+        <a href="exercicios/texto1.html">01 - texto1</a> |&nbsp
+        <a href="exercicios/texto2.html">02 - texto2</a> |&nbsp
+        <a href="exercicios/listas.html">03 - listas</a> |&nbsp
+        <a href="exercicios/listaAninhada.html">04 - listas Aninhada</a> |&nbsp
    </nav>
    <section id="conteudo"></section>
    <footer>
-        <br>
         Curso de Web Moderno
    </footer>
    <script>
@@ -30,5 +37,14 @@
             }
         })
    </script>
+    <script>
+        document.querySelectorAll('[id]').forEach(folder => {
+            folder.onclick = function(e){
+                const ul = folder.nextElementSibling
+                const d = ul.style.display
+                ul.style.display = d === 'none' ? 'block' : 'none'
+            } 
+        })
+       </script>
 </body>
 </html>
