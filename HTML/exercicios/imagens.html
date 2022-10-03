@@ -1,0 +1,19 @@
+<p>
+    <img src="fotos/Ultra-Sistemas-Padrao.png" 
+    alt="Logo Ultra"
+    width="700" height="400"
+    title="Logo da marca Ultra">
+
+</p>
+
+<script>
+    function mover(elem, inicio, fim, passo, callback){
+        const novoInicio = inicio - passo
+        if (novoInicio >= fim){
+            elem.style.left = novoInicio + 'px'
+            setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+        } else {
+            callback()
+        }
+    }
+</script>
