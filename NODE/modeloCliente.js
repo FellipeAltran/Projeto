@@ -1,7 +1,7 @@
-// para importar algo dentro do node de outros arquivos se usa o REQUIRE
+// // para importar algo dentro do node de outros arquivos se usa o REQUIRE
 
-const moduloA = require('./moduloA')
-const moduloB = require('./moduloB')
+ const moduloA = require('./moduloA')
+ const moduloB = require('./moduloB')
 
 console.log(moduloA.ola)
 console.log(moduloA.BemVindo)
